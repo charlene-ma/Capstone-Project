@@ -1,0 +1,77 @@
+<!-- 
+    ---------------------------------------------
+    ---------------------------------------------
+    This for planning the layout of the interface
+    ---------------------------------------------
+    ---------------------------------------------
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Management Software</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="page">
+        <!-- top bar -->
+        <div class="top-bar">
+            <button class="side-bar-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="currency-container">
+                <i class="coin-icon fa-solid fa-coins"></i>
+                <span class="currency-amount">$0</span>
+            </div>
+        </div>
+        <div class="side-bar">
+            <div class="claw-machine">
+                <button class="enter-claw-machine">Claw Machine</button>
+            </div>
+            <div class="sticker-list">
+                <button class="show-my-stickers">See My Stickers</button>
+            </div>
+            <div class="sell-stickers">
+                <button class="sell-my-stickers">Sell Stickers</button>
+            </div>
+        </div>
+        <main>
+            <div class="to-do-container main-container">
+                <!-- add item btn -->
+                <button class="add-btn" title="add task"><i class="fa-solid fa-plus"></i></button>
+                <!-- to-do header -->
+                <h1 class="to-do-hdr">To-do:</h1>
+                <!-- input takes in text value for task -->
+                <form class="add-item-container">
+                    <input type="text" class="add-item-input"></input>
+                    <button class="submit-btn" type="submit">
+                        <i class="fa-solid fa-check"></i>
+                    </button>
+                </form>
+                <!-- container holding list of to-do items -->
+                <div class="to-do-list-container">
+                    <div class="to-do-list">
+
+                    </div>
+                </div>
+            </div>
+            <div class="dates-container main-container">
+                <!-- add item btn -->
+                <button class="add-btn" title="add date"><i class="fa-solid fa-plus"></i></button>
+                <h1>Important Dates:</h1>
+            </div>
+            <div class="schedule-container main-container">
+                <!-- add page btn -->
+                <button class="add-btn" title="add page"><i class="fa-solid fa-plus"></i></button>
+                <h1>Daily Schedule</h1>
+                <p></p>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
