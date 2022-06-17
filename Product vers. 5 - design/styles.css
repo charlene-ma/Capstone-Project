@@ -1,0 +1,354 @@
+/* 
+    ----------------------
+    ----------------------
+    Styles for page layout
+    ----------------------
+    ----------------------
+*/
+
+:root {
+    --transparent-white: rgba(255, 255, 255, 0.26);
+}
+
+.page {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    grid-template-rows: 0.1fr 2fr;
+    background-color: rgb(247, 245, 245); 
+    background-image: url("background7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans';
+    color: rgb(99, 87, 87);
+}
+.top-bar {
+    background-color: var(--transparent-white);
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    height: 13vh;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+.open-side-bar-btn {
+    background-color: transparent;
+    border-style: none;
+    font-size: 5vh;
+    opacity: 50%;
+    position: relative;
+    top: 6vh;
+    left: 3vw;
+    margin-left: 0.5vw;
+    color: black;
+}
+.open-side-bar-btn:hover {
+    cursor: pointer;
+    opacity: 75%;
+}
+.currency-container {
+    float: right;
+    position: relative;
+    top: 7vh;
+    margin-right: 4vw;
+    font-size: 2.5vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    padding-right: 2vw;
+    padding-left: 1vw;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+}
+.coin-icon {
+    color: rgb(235, 163, 10);
+    margin-right: 1vw;
+}
+.currency-amount {
+    color: black;
+}
+.side-bar {
+    width: 0vw; 
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.053);
+    transition: 0.3s;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.103);
+}
+.show-side-bar {
+    width: 18vw;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+.shift-main {
+    grid-column: 2 / 3;
+}
+.side-bar-btn {
+  margin-top: 15vh;
+  margin-left: 1.5vw;
+  width: 15vw;
+  height: 8vh;
+  border-radius: 19px;
+  background-color: rgb(247, 245, 245);
+  border-color: rgb(219, 219, 219);
+  border-style: solid;
+}
+.side-bar-btn:hover {
+  opacity: 75%;
+  cursor: pointer;
+}
+.enter-claw-machine {
+  margin-top: 5vh;
+}
+main {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 5vh;
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    transition: 0.3s;
+    margin-top: 15vh;
+}
+.main-container {
+    margin-bottom: 2.5vh;
+    background-color: rgb(255, 255, 255, 0.4);
+    padding: 5vh;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+.add-btn {
+    border-style: none;
+    background-color: transparent;
+    float: right;
+    font-size: 140%;
+    opacity: 50%;
+}
+.to-do-hdr {
+    margin: 0px;
+}
+.add-btn:hover {
+    cursor: pointer;
+    opacity: 100%;
+}
+.add-item-container {
+    margin-top: 1.5vh;
+    opacity: 0%;
+    visibility: hidden;
+}
+.show-add-item-container {
+    visibility: visible;
+    opacity: 100%;
+    transition: opacity 0.3s;
+}
+.add-item-input {
+    height: 3vh;
+    width: 45%;
+    font-size: 110%;
+}
+.submit-btn {
+    border-style: none;
+    background-color: transparent;
+    font-size: 140%;
+    opacity: 40%;
+}
+.submit-btn:hover {
+    cursor: pointer;
+    opacity: 100%;
+}
+.to-do-item {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 0.001fr 1fr 0.01fr;
+    visibility: visible;
+    margin-bottom: -3vh;
+    font-size: 85%;
+    padding: 0px;
+}
+.show-to-do-item {
+    visibility: visible;
+}
+.main-btn {
+    border-style: none;
+    background-color: transparent;
+}
+.delete-btn {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    font-size: 100%;
+    opacity: 0%;
+}
+.delete-btn:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+.to-do-title {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    font-size: 140%;
+}
+.check-box {
+    grid-row: 1 / 2;
+    grid-column: 3 /4;
+    font-size: 150%;
+}
+.hide-check-box {
+  visibility: hidden;
+}
+.check-box:hover {
+    cursor: pointer;
+}
+.check-box-complete {
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+    font-size: 150%;
+    visibility: hidden;
+}
+.check-box-complete:hover {
+    cursor: pointer;
+}
+.claw-machine-container {
+  position: fixed;
+  background-color: rgb(252, 252, 252);
+  text-align: center;
+  padding: 2vw;
+  bottom: 10vh;
+  right: 23vw;
+  width: 50%;
+  height: 60%;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  visibility: hidden; 
+}
+.show-claw-machine {
+  visibility: visible;
+}
+.claw-machine-title {
+  position: relative;
+  top: 0vh;
+}
+.x-btn {
+  float: right;
+  background-color: transparent;
+  border-style: none;
+  font-size: 120%;
+  margin: 0px;
+}
+.x-btn:hover {
+  cursor: pointer;
+  opacity: 50%;
+}
+.machine-img {
+  height: 25vh;
+  position: relative;
+  bottom: 8vh;
+}
+.machine-btn {
+  border-radius: 25px;
+  border-width: 0.02vw;
+  width: 10vw;
+  height: 5vh;
+  margin: 2.5vw;
+  margin-top: 0px;
+  position: relative;
+  bottom: 7vh;
+  background-color: rgb(255, 193, 193); 
+  border-color: rgb(255, 220, 220); 
+  /* background-color: rgb(255, 229, 229);
+  border-color: rgb(255, 193, 193); */
+  border-width: 3px;
+  border-style: solid;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+}
+.ok-btn {
+  visibility: hidden;
+  width: 0px;
+  margin: 0px;
+}
+.show-btn {
+  visibility: visible;
+  width: 10vw;
+}
+.hide {
+  visibility: hidden;
+}
+.machine-btn:hover {
+  cursor: pointer;
+  opacity: 60%;
+}
+.machine-img {
+  margin-top: 8vh;
+}
+.owned-stickers-modal {
+  position: fixed;
+  background-color: rgb(250, 250, 250);
+  text-align: center;
+  padding: 2vw;
+  bottom: 4vh;
+  right: 8vw;
+  width: 80%;
+  height: 80%;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  visibility: hidden; 
+}
+.modal {
+  font-family: "Open Sans";
+}
+.show {
+  visibility: visible;
+}
+.owned-stickers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-top: 10vh;
+  opacity: 100%;
+}
+.sticker {
+  height: 20vh;
+  position: relative;
+  left: 6vw;
+  margin-bottom: 6vh;
+}
+.show-sticker {
+  opacity: 100%;
+}
+
+.study-timer-container{
+  display: grid;
+  grid-template-columns: 1fr repeat(5, 0.2fr) 1fr;
+  grid-template-rows: 1fr;
+  text-align: center;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.timer-item{
+  text-align: center;
+  padding: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding: 0px;
+  justify-content: center;
+  font-size: 110%;
+}
+
+.colon{
+  width: 5vw;
+  text-align: center;
+}
+
+.hours-container{
+  grid-column: 2 / 3;
+}
+
+.colon1{
+  grid-column: 3 / 4;
+}
+
+.minutes-container{
+  grid-column: 4 / 5;
+}
+
+.colon2{
+  grid-column: 5 / 6;
+}
+
+.seconds-container{
+  grid-column: 6 / 7;
+}

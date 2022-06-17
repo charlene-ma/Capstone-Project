@@ -1,0 +1,158 @@
+<!-- 
+    ---------------------------------------------
+    ---------------------------------------------
+    This for planning the layout of the interface
+    ---------------------------------------------
+    ---------------------------------------------
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Management Software</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- font awesome-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page">
+        <!-- top bar -->
+        <div class="top-bar">
+            <button class="open-side-bar-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="currency-container">
+                <i class="coin-icon fa-solid fa-coins"></i>
+                <span class="currency-amount">$0</span>
+            </div>
+        </div>
+        <!-- side bar -->
+        <div class="side-bar">
+            <div class="claw-machine">
+                <button class="enter-claw-machine side-bar-btn">Claw Machine</button>
+            </div>
+            <div class="sticker-list">
+                <button class="show-my-stickers side-bar-btn">See My Stickers</button>
+            </div>
+        </div>
+        <!-- main content -->
+        <main>
+            <div class="to-do-container main-container">
+                <!-- add item btn -->
+                <button class="add-btn" title="add task"><i class="fa-solid fa-plus"></i></button>
+                <!-- to-do header -->
+                <h1 class="to-do-hdr">To-do:</h1>
+                <!-- input takes in text value for task -->
+                <form class="add-item-container">
+                    <input type="text" class="add-item-input"></input>
+                    <button class="submit-btn" type="submit">
+                        <i class="fa-solid fa-check"></i>
+                    </button>
+                </form>
+                <!-- container for to-do list -->
+                <div class="to-do-list-container">
+                    <div class="to-do-list">
+
+                    </div>
+                </div>
+            </div>
+            <!-- container for important dates -->
+            <div class="dates-container main-container">
+                <!-- add item btn -->
+                <button class="add-btn" id="add-date" title="add date"><i class="fa-solid fa-plus"></i></button>
+                <!-- header -->
+                <h1>Important Dates:</h1>
+                <!-- input -->
+                <div class="add-item-container" id="add-date-container">
+                  <input type="text" class="add-item-input"></input>
+                  <button class="submit-btn" type="submit">
+                      <i class="fa-solid fa-check"></i>
+                  </button>
+                </div>
+              <!-- container for dates list -->
+              <div class="to-do-list-container">
+                  <div class="to-do-list">
+
+                  </div>
+              </div>
+            </div>
+            <!-- container for goals -->
+            <div class="journal-container main-container">
+                <!-- add page btn -->
+                <button class="add-btn" title="add page"><i class="fa-solid fa-plus"></i></button>
+                <h1>My Goals:</h1>
+                <!--
+                <p>(type here)</p>
+                -->
+            </div>
+            
+            <!-- study timer -->
+            <!--
+            <div class="main-container">
+              <h1>Study Timer:</h1>
+              <div class="study-timer-container timer-item">
+                <div class="hours-container timer-item">
+                  <h4 class="hours">1</h4>
+                  <p class="hours-header">hours</p>
+                </div>
+                <p class="colon colon1"><strong>:</strong></p>
+              -->
+                <!-- minutes -->
+                <!--
+                <div class="minutes-container timer-item">
+                  <h4 class="minutes">0</h4>
+                  <p class="minutes-header">minutes</p>
+                </div>
+                <p class="colon colon2"><strong>:</strong></p>
+              -->
+                <!-- seconds -->
+                <!--
+                <div class="seconds-container timer-item">
+                  <h4 class="seconds">0</h4>
+                  <p class="seconds-header">seconds</p>
+                </div>
+              </div>
+            -->
+              <!-- hours -->
+            </div>
+            <!-- modal for claw machine -->
+            <div class="claw-machine-container modal">
+              <button class="machine-x-btn x-btn">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <h1 class="claw-machine-title">Would you like to purchase a sticker for $25?</h1>
+              <img class="machine-img" src="claw machine.png">
+              <div class="btns">
+                <button class="yes-btn machine-btn">yes</button>
+                <button class="ok-btn machine-btn">ok</button>
+                <button class="no-btn machine-btn">no</button>
+              </div>
+            </div>
+            <!-- modal for owned stickers -->
+            <div class="owned-stickers-modal modal">
+              <button class="stickers-x-btn x-btn">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <h1 class="owned-stickers-title">My Stickers</h1>
+              <div class="owned-stickers">
+                <img src="cat.png" class="sticker1 sticker">
+                <img src="bear.png" class="sticker2 sticker">
+                <img src="baby chick.png" class="sticker3 sticker">
+                <img src="tiger.png" class="sticker4 sticker">
+                <img src="panda.png" class="sticker5 sticker">
+                <img src="pig.png" class="sticker6 sticker">
+              </div>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+    <script src="copy.js"></script>
+</body>
+</html>
